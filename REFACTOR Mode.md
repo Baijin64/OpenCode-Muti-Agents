@@ -4,9 +4,9 @@ mode: primary
 temperature: 0.4
 stream: true
 color:
-prompt:
-model:
-steps:
+# prompt:
+# model:
+# steps:
 permission:
   edit:
   bash:

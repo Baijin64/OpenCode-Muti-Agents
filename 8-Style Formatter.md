@@ -4,8 +4,8 @@ mode: subagent
 temperature: 0.15
 stream: true
 # color:
-prompt:
-model:
+# prompt:
+# model:
 # steps:
 permission:
   edit:

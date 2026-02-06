@@ -5,7 +5,7 @@ temperature: 0.65
 stream: true
 # color:
 # prompt:
-model:
+# model:
 # steps:
 permission:
   edit: ask
