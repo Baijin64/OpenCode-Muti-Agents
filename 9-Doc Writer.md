@@ -6,7 +6,7 @@ stream: true
 tools:
   read: true
   write: true
-description: Indexes any messy repository and generates a clear, maintainable documentation set (structure + navigation + minimal runbooks), optimized for low-cost models.
+description: 索引任何混乱的仓库并生成清晰、可维护的文档集（结构+导航+最小运行手册），针对低成本模型进行了优化。
 ---
 
 # Doc Writer

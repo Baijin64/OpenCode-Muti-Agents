@@ -6,7 +6,7 @@ stream: true
 tools:
   read: true
   write: true
-description: Implements tasks in Rust with idiomatic, safe, testable code; decides sync vs Tokio from project docs and repository signals.
+description: 用Rust实现任务，代码地道、安全、可测试；根据项目文档和仓库信号决定同步或Tokio异步。
 ---
 
 # Rust Engineer

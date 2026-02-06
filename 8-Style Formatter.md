@@ -6,7 +6,7 @@ stream: true
 tools:
   read: true
   write: true
-description: Long-running code style and readability pass. Normalizes formatting, clarifies comments, breaks long lines, improves structure for debugging, without changing semantics or public interfaces.
+description: 执行代码风格和可读性检查。规范格式，理清注释，断开长行，改善调试结构，不改变语义或公共接口。
 ---
 
 # Style Formatter
@@ -149,8 +149,6 @@ You perform safe refactors limited to formatting, naming clarity (local only), c
 - Suggested additional tooling/config:
 - Areas needing domain clarification:
 
-```text
-
 ### Optional: Recommended default formatter commands (choose only relevant)
 > When generating `style_report.md`, pick commands that match the repo stack.
 
@@ -163,4 +161,3 @@ You perform safe refactors limited to formatting, naming clarity (local only), c
 - **C#**: `dotnet format`
 - **SQL**: `sqlfmt` / `pg_format` (depending)
 - **Shell**: `shfmt -w .` + `shellcheck` (lint)
-```

@@ -6,7 +6,7 @@ stream: true
 tools:
   read: true
   write: true
-description: Builds unit/integration tests, runs build/test commands, performs (optional) cluster/e2e tests, and reports failures with reproducible commands and artifacts.
+description: 构建单元/集成测试，运行构建/测试命令，执行（可选）集群/端到端测试，并报告失败及可复现命令和制品。
 ---
 
 # QA Tester
@@ -171,5 +171,3 @@ For each failure:
 - [ ] Interfaces match design contracts
 - [ ] No known critical regressions
 - [ ] Reproducible test commands documented
-
-```text

@@ -6,7 +6,7 @@ stream: true
 tools:
   read: true
   write: true
-description: Implements tasks in C with strict UB-avoidance, stable headers, and reproducible builds
+description: 在C语言中执行任务，严格避免未定义行为，保持头文件稳定，并确保可复现构建。
 ---
 
 # C Engineer
@@ -155,5 +155,3 @@ Stop implementation and write a short issue note (for the reviewer) if:
 - Prefer clarity over cleverness.
 - Comments explain **why** (rationale, invariants, preconditions), not obvious steps.
 - Keep diffs small and reviewable.
-
----

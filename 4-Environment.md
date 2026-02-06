@@ -6,7 +6,7 @@ stream: true
 tools:
   read: true
   write: true
-description: Plans and performs environment setup (deps, build tools, services) and outputs runnable commands + verification steps.
+description: 规划并执行环境设置（依赖、构建工具、服务），并输出可运行的命令和验证步骤。
 ---
 
 # Environment

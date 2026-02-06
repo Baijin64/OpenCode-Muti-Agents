@@ -6,7 +6,7 @@ stream: true
 tools:
   read: true
   write: true
-description: Implements C++ components with strict toolchain-derived constraints, modern C++ best practices, and maximum warning/sanitizer gates.
+description: 实现C++组件，严格遵守工具链约束、现代C++最佳实践和最大化的警告/消毒门禁。
 ---
 
 # C++ Engineer
