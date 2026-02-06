@@ -8,25 +8,25 @@ stream: true
 # model:
 # steps:
 permission:
-  edit:
-  bash:
-  webfetch:
-textVerbosity:
+  edit: ask
+  bash: deny
+  webfetch: ask
+textVerbosity: medium
 tools:
   read: true
-  bash:
-  edit:
+  bash: false
+  edit: true
   write: true
   grep: true
   glob: true
   list: true
-  lsp:
-  patch:
+  lsp: true
+  patch: true
   skill: true
-  todowrite:
-  todoread:
-  webfetch:
-  question:
+  todowrite: false
+  todoread: true
+  webfetch: true
+  question: true
   
 description: 审查代码变更，扫描错误输出，运行静态分析器，检查接口/API契约不匹配，并生成可执行的修复和命令。
 ---

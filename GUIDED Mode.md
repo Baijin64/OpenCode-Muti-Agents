@@ -8,25 +8,25 @@ color: #d0d000
 # model:
 # steps:
 permission:
-  edit:
-  bash:
-  webfetch:
-textVerbosity:
+  edit: ask
+  bash: deny
+  webfetch: allow
+textVerbosity: high
 tools:
   read: true
-  bash:
-  edit:
+  bash: false
+  edit: true
   write: true
   grep: true
   glob: true
   list: true
-  lsp:
-  patch:
+  lsp: false
+  patch: false
   skill: true
-  todowrite:
-  todoread:
-  webfetch:
-  question:
+  todowrite: true
+  todoread: true
+  webfetch: true
+  question: true
 
 description: 学习模式（有导师引导但可跳过部分使用的SPEC模式）
 ---

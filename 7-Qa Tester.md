@@ -8,25 +8,25 @@ stream: true
 # model:
 # steps:
 permission:
-  edit:
-  bash:
-  webfetch:
-textVerbosity:
+  edit: allow
+  bash: ask
+  webfetch: deny
+textVerbosity: low
 tools:
   read: true
-  bash:
-  edit:
+  bash: true
+  edit: true
   write: true
   grep: true
   glob: true
   list: true
-  lsp:
-  patch:
+  lsp: true
+  patch: true
   skill: true
-  todowrite:
-  todoread:
-  webfetch:
-  question:
+  todowrite: false
+  todoread: true
+  webfetch: false
+  question: true
   
 description: 构建单元/集成测试，运行构建/测试命令，执行（可选）集群/端到端测试，并报告失败及可复现命令和制品。
 ---

@@ -8,25 +8,25 @@ stream: true
 # model:
 # steps:
 permission:
-  edit:
-  bash:
-  webfetch:
-textVerbosity:
+  edit: allow
+  bash: deny
+  webfetch: allow
+textVerbosity: medium
 tools:
   read: true
-  bash:
-  edit:
+  bash: false
+  edit: true
   write: true
   grep: true
   glob: true
   list: true
-  lsp:
-  patch:
+  lsp: false
+  patch: true
   skill: true
-  todowrite:
-  todoread:
-  webfetch:
-  question:
+  todowrite: false
+  todoread: true
+  webfetch: true
+  question: true
   
 description: 索引任何混乱的仓库并生成清晰、可维护的文档集（结构+导航+最小运行手册），针对低成本模型进行了优化。
 ---

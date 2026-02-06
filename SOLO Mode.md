@@ -8,25 +8,25 @@ color: #77aa00
 # model:
 # steps:
 permission:
-  edit:
-  bash:
-  webfetch:
-textVerbosity:
+  edit: ask
+  bash: deny
+  webfetch: allow
+textVerbosity: high
 tools:
   read: true
-  bash:
-  edit:
+  bash: false
+  edit: true
   write: true
   grep: true
   glob: true
   list: true
-  lsp:
-  patch:
+  lsp: false
+  patch: false
   skill: true
-  todowrite:
-  todoread:
-  webfetch:
-  question:
+  todowrite: true
+  todoread: true
+  webfetch: true
+  question: true
 
 description: SOLO模式（快速原型开发工作流）
 ---

@@ -8,25 +8,25 @@ color: #ff4bff
 # model:
 # steps:
 permission:
-  edit:
-  bash:
-  webfetch:
-textVerbosity:
+  edit: ask
+  bash: deny
+  webfetch: allow
+textVerbosity: high
 tools:
   read: true
-  bash:
-  edit:
+  bash: false
+  edit: true
   write: true
   grep: true
   glob: true
   list: true
-  lsp:
-  patch:
+  lsp: false
+  patch: false
   skill: true
-  todowrite:
-  todoread:
-  webfetch:
-  question:
+  todowrite: true
+  todoread: true
+  webfetch: true
+  question: true
 
 description: SPEC模式（高代码质量严肃开发模式）
 ---

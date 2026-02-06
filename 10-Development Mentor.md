@@ -8,25 +8,25 @@ stream: true
 # model:
 # steps:
 permission:
-  edit:
-  bash:
-  webfetch:
-textVerbosity:
+  edit: deny
+  bash: deny
+  webfetch: allow
+textVerbosity: hight
 tools:
   read: true
-  bash:
-  edit:
-  write: true
+  bash: false
+  edit: false
+  write: false
   grep: true
   glob: true
   list: true
-  lsp:
-  patch:
+  lsp: false
+  patch: false
   skill: true
-  todowrite:
-  todoread:
-  webfetch:
-  question:
+  todowrite: false
+  todoread: true
+  webfetch: true
+  question: true
   
 description: 教育目的的开发导师。通过间歇性询问架构、语法和实现细节来维持用户能力。提供资源但确保用户参与（苏格拉底法）。
 ---
