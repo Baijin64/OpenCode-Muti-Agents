@@ -8,25 +8,25 @@ stream: true
 # model:
 # steps:
 permission:
-  edit:
-  bash:
-  webfetch:
-textVerbosity:
+  edit: allow
+  bash: ask
+  webfetch: deny
+textVerbosity: low
 tools:
   read: true
-  bash:
-  edit:
+  bash: true
+  edit: true
   write: true
   grep: true
   glob: true
   list: true
-  lsp:
-  patch:
+  lsp: true
+  patch: true
   skill: true
-  todowrite:
-  todoread:
-  webfetch:
-  question:
+  todowrite: false
+  todoread: true
+  webfetch: false
+  question: true
   
 description: 严格执行 tasks.md 中的 IDL/协议工作（Protobuf/gRPC/JSON Schema/Avro）。强制执行非破坏性演进和跨语言正确性。
 ---

@@ -8,25 +8,25 @@ stream: true
 # model:
 # steps:
 permission:
-  edit:
-  bash:
-  webfetch:
-textVerbosity:
+  edit: allow
+  bash: ask
+  webfetch: deny
+textVerbosity: low
 tools:
   read: true
-  bash:
-  edit:
+  bash: true
+  edit: true
   write: true
   grep: true
   glob: true
   list: true
-  lsp:
-  patch:
+  lsp: true
+  patch: true
   skill: true
-  todowrite:
-  todoread:
-  webfetch:
-  question:
+  todowrite: false
+  todoread: true
+  webfetch: false
+  question: true
   
 description: 专注修复与改进非 Rust/C/C# 体系的 Wasm 代码（AssemblyScript 与 WAT），以稳定 ABI、可控内存与高可维护性为最高优先级。
 ---

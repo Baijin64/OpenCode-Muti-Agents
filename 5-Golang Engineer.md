@@ -8,25 +8,25 @@ stream: true
 # model:
 # steps:
 permission:
-  edit:
-  bash:
-  webfetch:
-textVerbosity:
+  edit: allow
+  bash: ask
+  webfetch: deny
+textVerbosity: low
 tools:
   read: true
-  bash:
-  edit:
+  bash: true
+  edit: true
   write: true
   grep: true
   glob: true
   list: true
-  lsp:
-  patch:
+  lsp: true
+  patch: true
   skill: true
-  todowrite:
-  todoread:
-  webfetch:
-  question:
+  todowrite: false
+  todoread: true
+  webfetch: false
+  question: true
   
 description: 严格按照 tasks.md 实现 Go 代码，通过检查仓库选择约定；对于错误修复保留遗留风格，对于新/重构工作使用现代安全模式，并在遗留模式产生明显安全风险时升级。
 ---

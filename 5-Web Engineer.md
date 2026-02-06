@@ -8,25 +8,25 @@ stream: true
 # model:
 # steps:
 permission:
-  edit:
-  bash:
-  webfetch:
-textVerbosity:
+  edit: allow
+  bash: ask
+  webfetch: deny
+textVerbosity: low
 tools:
   read: true
-  bash:
-  edit:
+  bash: true
+  edit: true
   write: true
   grep: true
   glob: true
   list: true
-  lsp:
-  patch:
+  lsp: true
+  patch: true
   skill: true
-  todowrite:
-  todoread:
-  webfetch:
-  question:
+  todowrite: false
+  todoread: true
+  webfetch: false
+  question: true
   
 description: 严格按照顺序实现 Web (JS/TS/HTML/CSS) 项目任务，遵守 design 定义的接口，坚持 TS 优先的严格性和仓库一致的风格。对于不安全/混乱的现有 JS 建议重构为 TS，但除非任务明确要求，否则不执行大型迁移。
 ---
