@@ -17,12 +17,12 @@ tools:
   bash:
   edit:
   write: true
-  grep:
-  glob:
-  list:
+  grep: true
+  glob: true
+  list: true
   lsp:
   patch:
-  skill:
+  skill: true
   todowrite:
   todoread:
   webfetch:
