@@ -97,7 +97,7 @@ After user confirmation write:
 
 ## Output Format: tasks.md
 
-```markdown
+````markdown
 # Task Breakdown: {Project Name}
 - Sources:
   - requirements: docs/{mode}/{project-name}/requirements.md
@@ -166,4 +166,5 @@ Structure suggestion:
 - [ ] User has explicitly replied "Confirm Breakdown Approved"
 - [ ] Written `docs/{mode}/{project-name}/tasks.md`
 - [ ] (Optional) Written `docs/{mode}/{project-name}/tasks.json`
-```
+
+````

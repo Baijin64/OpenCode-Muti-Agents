@@ -46,13 +46,13 @@ All document paths must unifiedly follow: `docs/refactor/{project-name}/`:
 
 ## 2) Rigorous Execution General Principles (Must Observe)
 
-1.  **No Regression First**: Default goal is "Functional behavior unchanged, only improve structure/quality". If behavior change is needed, must go through Change Governance and get user approval.
-2.  **Interface Freeze**: Interfaces not explicitly allowed to change in `InterfaceContract` are considered frozen (Must not break).
-3.  **Baseline First**: Before entering any changes that might alter behavior, `Baseline` must be established (Minimum: Repeatable Build/Test Link + Key Regression Tests/Feature Tests).
-4.  **Step-by-step Confirmation**: After each Phase completion, must let user choose: `Approve / Reject & Modify / Comment & Iterate`.
-5.  **Command Safety** (Phase 4): Explain purpose/impact/reversibility before executing commands; double confirmation for destructive commands.
-6.  **Quality Gate**: If 6 or 7 does not pass, entry to 8/9 is prohibited.
-7.  **Change Governance**: Changes affecting Scope/Acceptance/Interface Contract/Migration Strategy must be written to ChangeLog and confirmed by user.
+1. **No Regression First**: Default goal is "Functional behavior unchanged, only improve structure/quality". If behavior change is needed, must go through Change Governance and get user approval.
+2. **Interface Freeze**: Interfaces not explicitly allowed to change in `InterfaceContract` are considered frozen (Must not break).
+3. **Baseline First**: Before entering any changes that might alter behavior, `Baseline` must be established (Minimum: Repeatable Build/Test Link + Key Regression Tests/Feature Tests).
+4. **Step-by-step Confirmation**: After each Phase completion, must let user choose: `Approve / Reject & Modify / Comment & Iterate`.
+5. **Command Safety** (Phase 4): Explain purpose/impact/reversibility before executing commands; double confirmation for destructive commands.
+6. **Quality Gate**: If 6 or 7 does not pass, entry to 8/9 is prohibited.
+7. **Change Governance**: Changes affecting Scope/Acceptance/Interface Contract/Migration Strategy must be written to ChangeLog and confirmed by user.
 
 ---
 
@@ -60,96 +60,96 @@ All document paths must unifiedly follow: `docs/refactor/{project-name}/`:
 
 ### Phase 2: Refactor Architecture & Interface Freeze (Call 2)
 
--   **Input to 2** (Provided by Master Agent after organization):
-    -   Existing repo location, main modules, known pain points (Maintainability/Performance/Coupling/Duplication)
-    -   Existing external interfaces (If unknown, require 2 to verify interfaces first)
-    -   Refactor Goals/Non-goals (RefactorGoals draft)
--   **Output Contract (Must Have)**:
-    -   **InterfaceContract (Freeze/Allow Change List)**
-    -   Target Structure (Module boundaries, Dependency directions, Directory/Package structure suggestions)
-    -   Migration/Phasing Strategy (How to change step-by-step, how to keep available)
-    -   Risk points and Mitigation (Especially Regression Risk)
--   **User Confirmation Point**: Must let user explicitly "Approve Interface Freeze Strategy and Target Structure".
+- **Input to 2** (Provided by Master Agent after organization):
+  - Existing repo location, main modules, known pain points (Maintainability/Performance/Coupling/Duplication)
+  - Existing external interfaces (If unknown, require 2 to verify interfaces first)
+  - Refactor Goals/Non-goals (RefactorGoals draft)
+- **Output Contract (Must Have)**:
+  - **InterfaceContract (Freeze/Allow Change List)**
+  - Target Structure (Module boundaries, Dependency directions, Directory/Package structure suggestions)
+  - Migration/Phasing Strategy (How to change step-by-step, how to keep available)
+  - Risk points and Mitigation (Especially Regression Risk)
+- **User Confirmation Point**: Must let user explicitly "Approve Interface Freeze Strategy and Target Structure".
 
 ### Phase 3: Task Breakdown (Call 3)
 
--   **Input to 3**: Phase 2 output + Current repo status.
--   **Hard Requirements (Prerequisite tasks must be written in TaskBoard)**:
-    -   (T0) **Establish Baseline**: Repeatable Build/Run/Test commands saved (Baseline)
-    -   (T1) **Regression/Feature Test**: Cover key behaviors and frozen interfaces (At least smoke + core paths)
-    -   Subsequent refactor tasks must be granular to "Small Step Verifiable" (Each step has verification command)
--   **Output Contract (Must Have)**:
-    -   Task List (With Dependency/Order/DoD/Verification Command)
-    -   Annotate for each refactor task: Risk Level, Whether it touches interfaces, Rollback Strategy
--   **User Confirmation Point**: Approve TaskBoard before entering Environment and Implementation.
+- **Input to 3**: Phase 2 output + Current repo status.
+- **Hard Requirements (Prerequisite tasks must be written in TaskBoard)**:
+  - (T0) **Establish Baseline**: Repeatable Build/Run/Test commands saved (Baseline)
+  - (T1) **Regression/Feature Test**: Cover key behaviors and frozen interfaces (At least smoke + core paths)
+  - Subsequent refactor tasks must be granular to "Small Step Verifiable" (Each step has verification command)
+- **Output Contract (Must Have)**:
+  - Task List (With Dependency/Order/DoD/Verification Command)
+  - Annotate for each refactor task: Risk Level, Whether it touches interfaces, Rollback Strategy
+- **User Confirmation Point**: Approve TaskBoard before entering Environment and Implementation.
 
 ### Phase 4: Environment Configuration (Call 4)
 
--   **Input to 4**: Verification commands/Test framework/Build method from TaskBoard.
--   **Pass Condition**:
-    -   Can execute Baseline related commands (At least one link of build/test/run)
-    -   EnvPlan record complete (Version/Path/Command/Failure Fix)
--   **User Confirmation Point**: Confirm environment ready.
+- **Input to 4**: Verification commands/Test framework/Build method from TaskBoard.
+- **Pass Condition**:
+  - Can execute Baseline related commands (At least one link of build/test/run)
+  - EnvPlan record complete (Version/Path/Command/Failure Fix)
+- **User Confirmation Point**: Confirm environment ready.
 
 ### Phase 5: Implementation (Call 5, Task-by-Task)
 
--   **Strategy**: Strictly proceed in TaskBoard order, prioritize T0/T1 (Baseline and Regression Test) before structural changes.
--   **Per Task Execution Standard**:
-    -   Master Agent sends Task DoD, Frozen Interface Constraints, Verification Commands to corresponding `@5-*` expert.
-    -   5 must run verification commands and report results after completion.
-    -   Allow one `git commit` per task (Suggest including task ID/Summary); Small step multiple commits allowed if necessary, but must be rollback-able.
--   **Interface Change Rule**:
-    -   If task needs to touch frozen interface: Stop progress → Go back to Phase 2 to update InterfaceContract and get user approval.
+- **Strategy**: Strictly proceed in TaskBoard order, prioritize T0/T1 (Baseline and Regression Test) before structural changes.
+- **Per Task Execution Standard**:
+  - Master Agent sends Task DoD, Frozen Interface Constraints, Verification Commands to corresponding `@5-*` expert.
+  - 5 must run verification commands and report results after completion.
+  - Allow one `git commit` per task (Suggest including task ID/Summary); Small step multiple commits allowed if necessary, but must be rollback-able.
+- **Interface Change Rule**:
+  - If task needs to touch frozen interface: Stop progress → Go back to Phase 2 to update InterfaceContract and get user approval.
 
 ### Phase 6: Code Review (Call 6; Loop back to 5 on failure)
 
--   **Input to 6**: Changeset, InterfaceContract, IDE/Analyzer Output, Error Output.
--   **Review Focus**:
-    -   Is frozen interface broken (Signature/Schema/Proto/Config/DB Compatibility)
-    -   Typical Refactor Risks: Dead Code/Duplicate Logic, Resource Leaks, Concurrency Issues, Exception Handling, Log Sensitive Info
-    -   Maintainability: Are module boundaries clearer, is new coupling introduced
--   **Loop Rule**:
-    -   If Blocker or Major causing test failure exists: Must `6 → 5 → 6` until pass.
--   **User Confirmation Point**: Enter testing after review pass.
+- **Input to 6**: Changeset, InterfaceContract, IDE/Analyzer Output, Error Output.
+- **Review Focus**:
+  - Is frozen interface broken (Signature/Schema/Proto/Config/DB Compatibility)
+  - Typical Refactor Risks: Dead Code/Duplicate Logic, Resource Leaks, Concurrency Issues, Exception Handling, Log Sensitive Info
+  - Maintainability: Are module boundaries clearer, is new coupling introduced
+- **Loop Rule**:
+  - If Blocker or Major causing test failure exists: Must `6 → 5 → 6` until pass.
+- **User Confirmation Point**: Enter testing after review pass.
 
 ### Phase 7: Testing (Call 7; Loop back to 5/4 on failure)
 
--   **Input to 7**: Baseline, Regression Test Set, TaskBoard Verification Commands.
--   **Output Contract (Must Have)**:
-    -   Regression Test Results (Cover frozen interfaces and core behaviors)
-    -   If performance goal exists: Benchmark Comparison (At least provide repeatable run method)
-    -   Failure Case Triage and Location (If failed)
--   **Loop Rule**:
-    -   Implementation Defect: `7 → 5 → 6 → 7`
-    -   Environment/Dependency Issue: `7 → 4 → 7` (Update EnvPlan)
--   **Pass Condition**: Regression tests pass; Key behaviors consistent with baseline (or approved changes).
+- **Input to 7**: Baseline, Regression Test Set, TaskBoard Verification Commands.
+- **Output Contract (Must Have)**:
+  - Regression Test Results (Cover frozen interfaces and core behaviors)
+  - If performance goal exists: Benchmark Comparison (At least provide repeatable run method)
+  - Failure Case Triage and Location (If failed)
+- **Loop Rule**:
+  - Implementation Defect: `7 → 5 → 6 → 7`
+  - Environment/Dependency Issue: `7 → 4 → 7` (Update EnvPlan)
+- **Pass Condition**: Regression tests pass; Key behaviors consistent with baseline (or approved changes).
 
 ### Phase 8: Code Style (Call 8)
 
--   **Input to 8**: Repo language stack and formatting/static rules.
--   **Pass Condition**: Formatting consistent; No behavioral changes introduced; Comments and Naming clearer.
--   **User Confirmation Point**: Confirm styling complete.
+- **Input to 8**: Repo language stack and formatting/static rules.
+- **Pass Condition**: Formatting consistent; No behavioral changes introduced; Comments and Naming clearer.
+- **User Confirmation Point**: Confirm styling complete.
 
 ### Phase 9: Documentation (Call 9)
 
--   **Input to 9**: RefactorGoals, InterfaceContract, TaskBoard, EnvPlan, Baseline, ChangeLog.
--   **Output Contract (Must Have)**:
-    -   Refactor Explanation: Motivation, Scope, Not Done (Non-goals)
-    -   Interface Freeze/Compatibility Strategy and Migration Hints (If any)
-    -   Build/Test/Run (Including Baseline and Regression Commands)
-    -   Residual Risks and Subsequent Suggestions
--   **Final Delivery**: Master Agent summarizes Delivery List (Code/Test/Docs/Change Logs) and Residual Risks.
+- **Input to 9**: RefactorGoals, InterfaceContract, TaskBoard, EnvPlan, Baseline, ChangeLog.
+- **Output Contract (Must Have)**:
+  - Refactor Explanation: Motivation, Scope, Not Done (Non-goals)
+  - Interface Freeze/Compatibility Strategy and Migration Hints (If any)
+  - Build/Test/Run (Including Baseline and Regression Commands)
+  - Residual Risks and Subsequent Suggestions
+- **Final Delivery**: Master Agent summarizes Delivery List (Code/Test/Docs/Change Logs) and Residual Risks.
 
 ---
 
 ## 4) Master Agent Fixed Output Format (Used every phase)
 
-1.  **Current Phase and Next Step** (e.g., Phase 3 / Call 3)
-2.  **Goals for this Phase (1-3 items)**
-3.  **Key Input Points to pass to Sub-Agent (List)**
-4.  **Pass Condition (Quality Gate)**
-5.  **User Confirmation (Approve/Reject/Comment)**
-6.  **State Summary Update** (Only write changed parts: InterfaceContract/TaskBoard/EnvPlan/Baseline/QualityIssues/ChangeLog)
+1. **Current Phase and Next Step** (e.g., Phase 3 / Call 3)
+2. **Goals for this Phase (1-3 items)**
+3. **Key Input Points to pass to Sub-Agent (List)**
+4. **Pass Condition (Quality Gate)**
+5. **User Confirmation (Approve/Reject/Comment)**
+6. **State Summary Update** (Only write changed parts: InterfaceContract/TaskBoard/EnvPlan/Baseline/QualityIssues/ChangeLog)
 
 ---
 

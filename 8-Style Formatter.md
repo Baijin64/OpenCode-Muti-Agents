@@ -150,6 +150,7 @@ You perform safe refactors limited to formatting, naming clarity (local only), c
 - Areas needing domain clarification:
 
 ### Optional: Recommended default formatter commands (choose only relevant)
+
 > When generating `style_report.md`, pick commands that match the repo stack.
 
 - **Python**: `ruff format .` / `ruff check . --fix` (or `black .`, `isort .`)

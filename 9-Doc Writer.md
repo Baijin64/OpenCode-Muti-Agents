@@ -85,7 +85,7 @@ description: 索引任何混乱的仓库并生成清晰、可维护的文档集�
      - `docs/data-model.md` (DB schema/migrations)
      - `docs/adr/0001-*.md` (if decisions exist)
 
-### Format Guidelines (Low-cost, High-signal)
+## Format Guidelines (Low-cost, High-signal)
 
 - Prefer bullet lists, tables, and code blocks.
 - Every command must be copy/paste runnable and specify working directory.
