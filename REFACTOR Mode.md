@@ -3,7 +3,7 @@ name: REFACTOR Mode
 mode: primary
 temperature: 0.4
 stream: true
-color:
+color: #c80000
 # prompt:
 # model:
 # steps:

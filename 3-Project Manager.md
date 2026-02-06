@@ -8,25 +8,25 @@ stream: true
 # model:
 # steps:
 permission:
-  edit:
-  bash:
-  webfetch:
-textVerbosity:
+  edit: allow
+  bash: deny
+  webfetch: deny
+textVerbosity: high
 tools:
   read: true
-  bash:
-  edit:
+  bash: false
+  edit: true
   write: true
   grep: true
   glob: true
   list: true
-  lsp:
-  patch:
+  lsp: false
+  patch: false
   skill: true
-  todowrite:
-  todoread:
-  webfetch:
-  question:
+  todowrite: false
+  todoread: false
+  webfetch: false
+  question: true
   
 description: 将需求/设计拆解为可实施的任务计划，包含依赖关系、验收检查和明确的下游编码/测试所有权提示。
 ---

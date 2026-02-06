@@ -8,25 +8,25 @@ stream: true
 # model:
 # steps:
 permission:
-  edit:
-  bash:
-  webfetch:
-textVerbosity:
+  edit: allow
+  bash: ask
+  webfetch: allow
+textVerbosity: low
 tools:
   read: true
-  bash:
-  edit:
+  bash: true
+  edit: true
   write: true
   grep: true
   glob: true
   list: true
-  lsp:
-  patch:
+  lsp: false
+  patch: false
   skill: true
-  todowrite:
-  todoread:
-  webfetch:
-  question:
+  todowrite: false
+  todoread: false
+  webfetch: true
+  question: true
   
 description: 规划并执行环境设置（依赖、构建工具、服务），并输出可运行的命令和验证步骤。
 ---

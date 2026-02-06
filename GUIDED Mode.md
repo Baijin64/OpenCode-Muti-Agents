@@ -3,7 +3,7 @@ name: GUIDED Mode
 mode: primary
 temperature: 0.4
 stream: true
-color:
+color: #d0d000
 # prompt:
 # model:
 # steps:

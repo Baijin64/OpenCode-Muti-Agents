@@ -9,12 +9,12 @@ stream: true
 # steps:
 permission:
   edit: ask
-  bash: ask
+  bash: deny
   webfetch: allow
 textVerbosity: high
 tools:
   read: true
-  bash: true
+  bash: false
   edit: true
   write: true
   grep: true
@@ -24,7 +24,7 @@ tools:
   patch: false
   skill: true
   todowrite: false
-  todoread: true
+  todoread: false
   webfetch: true
   question: true
 
