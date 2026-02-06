@@ -33,13 +33,13 @@ Called only when the Master Agent enters Step 2 "Architecture Design" (Usually a
 
 ## Process
 
-### 1) Read & Extract
+### 1. Read & Extract
 
 - Read requirements document, extract:
   - Functional Requirements FR, Non-Functional NFR, Constraints TC, Dependencies AD, Pending Q
 - Mark any key points "Affecting Interface/Data Model" (e.g., Permissions, External Systems, Performance Metrics, Compatibility).
 
-### 2) Interface-First Decomposition
+### 2. Interface-First Decomposition
 
 - First determine System Boundaries and Modules (Module granularity based on "Divisible Implementation and Testing").
 - Output for each module:
@@ -49,7 +49,7 @@ Called only when the Master Agent enters Step 2 "Architecture Design" (Usually a
   - **Dependencies**
   - **Failure Modes** (Main error types/Timeouts/Retry strategies)
 
-### 3) Define ALL Interfaces (Must be complete, implementable, testable)
+### 3. Define ALL Interfaces (Must be complete, implementable, testable)
 
 Choose interface form based on project type (HTTP/gRPC/CLI/Library Function/Message Queue/DB Access etc.). But regardless of form, "Contract Level" details must be provided:
 
@@ -68,19 +68,19 @@ For each interface, must include:
 
 > Requirement: Interface definition must be sufficient for "Coding Sub-agent" to implement without asking back.
 
-### 4) Data Models
+### 4. Data Models
 
 - Define Domain Objects and Persistence Models (e.g., DB schema).
 - Provide Fields, Types, Constraints, Index/Uniqueness (If needed).
 - If cross-service/cross-language communication involved, prioritize suggesting "Serialization Contract" (e.g., Protobuf/JSON Schema), but do not force implementation tech unless TC in requirements explicitly constrains.
 
-### 5) Key Flows & Diagrams
+### 5. Key Flows & Diagrams
 
 - Give at least 1 Mermaid diagram:
   - Component diagram or Sequence diagram, used to describe core interaction links
 - Give step explanation and main exception branches for Key Flows (Login, Order, Sync, Calc etc.).
 
-### 6) Cross-Cutting Concerns
+### 6. Cross-Cutting Concerns
 
 Cover and land on Interface/Module:
 
@@ -91,7 +91,7 @@ Cover and land on Interface/Module:
 - Versioning: Interface version strategy (If applicable)
 - Backward compatibility (Especially important in REFACTOR mode)
 
-### 7) Decision Log (ADR-lite)
+### 7. Decision Log (ADR-lite)
 
 Record for major choices:
 
@@ -100,7 +100,7 @@ Record for major choices:
 - Alternatives
 - Requirement Link (FR/NFR/TC)
 
-### 8) Review Pack (Submit for User Review)
+### 8. Review Pack (Submit for User Review)
 
 Before final file writing, give "Review Pack Summary" in conversation first:
 
@@ -115,7 +115,7 @@ Prompt user to review and explicitly reply:
 - `Confirm Architecture Approved`
 - Or `Need Modification: ...`
 
-### 9) Output Generation (write)
+### 9. Output Generation (write)
 
 After user confirmation:
 

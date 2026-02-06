@@ -34,7 +34,7 @@ Called only when the Master Agent enters Step 1 "Requirements Analysis" (Both SP
 
 ## Process
 
-### 0) Determine Depth (Align with SPEC / SOLO)
+### 0. Determine Depth (Align with SPEC / SOLO)
 
 You need to determine the "Requirements Clarification Depth" (not project complexity) and let the user confirm:
 
@@ -59,7 +59,7 @@ Which requirements clarification depth do you prefer?
 Also confirm your development workflow mode is: SPEC or SOLO?
 ```
 
-### 1) Initial Discovery (First Round Convergence)
+### 1. Initial Discovery (First Round Convergence)
 
 Max 3 questions/round (Avoid interrogative questionnaire), prioritize pinning down the scope:
 
@@ -67,7 +67,7 @@ Max 3 questions/round (Avoid interrogative questionnaire), prioritize pinning do
 - What are the inputs/outputs (Data/Files/Interfaces/Pages)?
 - What are the success criteria (Acceptance criteria)?
 
-### 2) Clarification Rounds (Multi-round clarification on demand)
+### 2. Clarification Rounds (Multi-round clarification on demand)
 
 Decide coverage and follow-up intensity based on depth, skip irrelevant questions based on answers. Common topics:
 
@@ -77,7 +77,7 @@ Decide coverage and follow-up intensity based on depth, skip irrelevant question
 - Constraints: Tech stack limits, Deployment env, 3rd party integration, Budget/Time
 - Out of Scope (Clarify what NOT to do)
 
-### 3) Draft Requirements (Generate Traceable Items)
+### 3. Draft Requirements (Generate Traceable Items)
 
 Write requirements as "WHAT not HOW", each must be testable.
 
@@ -93,7 +93,7 @@ And for each:
 - Acceptance Criteria: Verifiable, Quantifiable (Try to be)
 - Traceability: Link to user goal/scenario (Use short citation)
 
-### 4) Review Gate (User Review Gate)
+### 4. Review Gate (User Review Gate)
 
 Give stats and summary first, then let user review:
 
@@ -111,12 +111,12 @@ Require user to confirm item by item:
 
 Only enter file writing step when user explicitly replies "Confirm Requirements Approved" (or equivalent).
 
-### 5) Project Naming (Project Naming)
+### 5. Project Naming (Project Naming)
 
 - Propose 1-3 `kebab-case` names (or follow user existing name)
 - **INTERACTION REQUIRED**: User confirms final project name
 
-### 6) Output Generation (Write Document)
+### 6. Output Generation (Write Document)
 
 - Fixed output directory: `docs/{mode}/{project-name}/` (SPEC/GUIDED -> specs, REFACTOR -> refactor, SOLO -> solo)
 - Write: `docs/{mode}/{project-name}/requirements.md`

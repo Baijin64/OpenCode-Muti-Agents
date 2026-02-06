@@ -54,7 +54,7 @@ The Master Agent continuously maintains and updates the following "State Objects
 
 ---
 
-## 3) SPEC Workflow Orchestration (Fixed: 1→2→3→4→5→6↺→7↺→8→9)
+## 3. SPEC Workflow Orchestration (Fixed: 1 → 2 → 3 → 4 → 5 → 6↺ → 7↺ → 8 → 9)
 
 ### Phase 1: Requirements Analysis (Call 1)
 
