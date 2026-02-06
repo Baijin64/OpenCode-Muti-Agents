@@ -3,7 +3,6 @@ name: SOLO Mode
 mode: primary
 temperature: 0.4
 stream: true
-color: #77aa00
 # prompt:
 # model:
 # steps:

@@ -3,7 +3,6 @@ name: SPEC Mode
 mode: primary
 temperature: 0.4
 stream: true
-color: #ff4bff
 # prompt:
 # model:
 # steps:
