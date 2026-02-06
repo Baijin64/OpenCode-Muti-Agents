@@ -30,13 +30,13 @@ description: The main coordinator for the SOLO rapid-prototyping workflow.
 
 ## Phase 1: Requirements Draft（调用 1，不提问用户）
 
-1. Invoke `@1` 基于用户初始输入，快速产出 `docs/{project}/requirements.md`
+1. Invoke `@1` 基于用户初始输入，快速产出 `docs/solo/{project}/requirements.md`
 2. **硬性要求（最小契约）**：requirements.md 必须包含
    - 目标 / 非目标
    - 验收标准（可判定）
    - 关键约束（平台/语言/时间）
    - **最小接口契约草案**（哪怕只有：模块边界 + 主要输入输出/数据结构 + 错误处理约定）
-3. **Checkpoint**：确认 `docs/{project}/requirements.md` 存在且包含上述小节
+3. **Checkpoint**：确认 `docs/solo/{project}/requirements.md` 存在且包含上述小节
 4. **不向用户提问**：默认进入 Phase 2
 
 ## Phase 2: One-time Clarification（唯一一次提问用户）
@@ -44,15 +44,15 @@ description: The main coordinator for the SOLO rapid-prototyping workflow.
 1. 读取 requirements.md 与用户初始目标，生成 **最多 5 个**“阻塞型澄清问题”（只问会影响技术路线/验收的点）
 2. 通过 `ask` 向用户一次性提问，并提供选项：
    - A) 逐条回答
-   - B) “按默认假设继续”（你列出默认假设清单并写入 `docs/{project}/assumptions.md`）
+   - B) “按默认假设继续”（你列出默认假设清单并写入 `docs/solo/{project}/assumptions.md`）
 3. 根据用户回答/默认假设，更新：
-   - `docs/{project}/requirements.md`（如需）
-   - `docs/{project}/assumptions.md`（必有，记录取舍）
+   - `docs/solo/{project}/requirements.md`（如需）
+   - `docs/solo/{project}/assumptions.md`（必有，记录取舍）
 4. **从此以后不再提问用户**，除非出现“破坏性命令二次确认”或“范围/验收标准必须变更”（见异常规则）
 
 ## Phase 3: Task Planning（调用 3，不提问用户）
 
-1. Invoke `@3` 使用 requirements.md + assumptions.md 输出 `docs/{project}/tasks.md`
+1. Invoke `@3` 使用 requirements.md + assumptions.md 输出 `docs/solo/{project}/tasks.md`
 2. tasks.md 必须满足：
    - 任务粒度可交付（每个任务 0.5~2h 级别的原型实现）
    - 每个任务都有 DoD + 验证命令/检查点
@@ -63,7 +63,7 @@ description: The main coordinator for the SOLO rapid-prototyping workflow.
 ## Phase 4: Environment Setup（调用 4，自动执行）
 
 1. Invoke `@4` 依据 tasks.md 的验证命令搭建环境并执行必要命令
-2. 记录 `docs/{project}/env.md`：已执行命令、版本、路径、失败与修复
+2. 记录 `docs/solo/{project}/env.md`：已执行命令、版本、路径、失败与修复
 3. **通过条件**：最小链路打通（能 build/run + 能执行首个任务的验证命令）
 4. 命令执行规则：
    - 破坏性命令（删除/覆盖/重装/改全局配置）必须二次确认；除此外不提问用户
@@ -102,7 +102,7 @@ description: The main coordinator for the SOLO rapid-prototyping workflow.
 
 ## Phase 9: Documentation（调用 9）
 
-1. Invoke `@9` 生成 `README.md` + `docs/{project}/overview.md`（或同等结构）
+1. Invoke `@9` 生成 `README.md` + `docs/solo/{project}/overview.md`（或同等结构）
 2. 文档必须包含：
    - 快速开始（环境/运行/测试，一屏内可执行）
    - 功能清单与已知限制（原型取舍透明化）

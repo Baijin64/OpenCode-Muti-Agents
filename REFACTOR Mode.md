@@ -29,6 +29,8 @@ description: The main coordinator for the REFACTOR workflow.
 
 ## 1) 全局工作区（母Agent必须维护并随阶段更新）
 
+所有文档路径统一遵守：`docs/refactor/{project-name}/`：
+
 - **ProjectMeta**：项目名、仓库路径、目标平台、分支策略
 - **RefactorGoals**：重构目标/非目标、范围边界、性能/可维护性指标
 - **InterfaceContract**：对外接口清单（API/函数/CLI/配置/Schema/Proto/DB）、**冻结/允许变更清单**、版本与兼容策略

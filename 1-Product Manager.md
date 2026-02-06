@@ -118,8 +118,8 @@ description: |
 
 ### 6) Output Generation（写文档）
 
-- 固定输出目录：`docs/spec/{project-name}/`
-- 写入：`docs/spec/{project-name}/requirements.md`
+- 固定输出目录：`docs/{mode}/{project-name}/`（SPEC/GUIDED -> specs, REFACTOR -> refactor, SOLO -> solo）
+- 写入：`docs/{mode}/{project-name}/requirements.md`
 
 > 可选增强（建议开启）：同时写 `docs/spec/{project-name}/requirements.summary.json`，便于后续架构师/拆解/测试自动引用。
 
@@ -198,5 +198,5 @@ description: |
 - [ ] 已列出 Out of Scope（或明确“暂无”）
 - [ ] 用户已明确回复“确认需求通过”
 - [ ] 项目名已确认
-- [ ] 已写入 `docs/spec/{project-name}/requirements.md`
-- [ ] （可选）已写入 `docs/spec/{project-name}/requirements.summary.json`
+- [ ] 已写入 `docs/{mode}/{project-name}/requirements.md`
+- [ ] （可选）已写入 `docs/{mode}/{project-name}/requirements.summary.json`

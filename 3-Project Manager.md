@@ -19,8 +19,8 @@ description: Breaks down requirements/design into an implementable task plan wit
 
 由母agent提供其一或多个（不要求你决定前置条件）：
 
-- `docs/spec/{project-name}/requirements.md`（常见）
-- `docs/spec/{project-name}/design.md` 和/或 `docs/spec/{project-name}/interfaces.md`（若存在更好）
+- `docs/{mode}/{project-name}/requirements.md`（常见）
+- `docs/{mode}/{project-name}/design.md` 和/或 `docs/{mode}/{project-name}/interfaces.md`（若存在更好）
 - 若为重构/修复：变更目标、失败用例、错误日志摘要、代码库关键信息（由母agent传入）
 
 如输入缺失导致无法拆解，你需要在对话中提出**最少必要澄清问题**（一次不超过 5 个）。
@@ -77,7 +77,8 @@ description: Breaks down requirements/design into an implementable task plan wit
 在写入最终文件前，先在对话中给出：
 
 - 任务总数、里程碑列表
-- Top 10 关键任务（含依赖与验收）
+- 关键路径任务（Critical Path Tasks）
+- 全部任务清单概览（不限制数量，必须覆盖所有需求）
 - 你认为最大的 3 个风险与应对
 
 并要求用户明确回复：
@@ -90,16 +91,16 @@ description: Breaks down requirements/design into an implementable task plan wit
 1) **Write Output**
 用户确认后写入：
 
-- `docs/spec/{project-name}/tasks.md`
+- `docs/{mode}/{project-name}/tasks.md`
 （可选）同时写：
-- `docs/spec/{project-name}/tasks.json`（给母agent或调度器做程序化路由用）
+- `docs/{mode}/{project-name}/tasks.json`（给母agent或调度器做程序化路由用）
 
 ## Output Format: tasks.md
 
 ```markdown
 # Task Breakdown: {Project Name}
 - Sources:
-  - requirements: docs/spec/{project-name}/requirements.md
+  - requirements: docs/{mode}/{project-name}/requirements.md
   - design/interfaces: (if provided)
 - Assumptions:
 - Risks (top 3):
@@ -125,7 +126,9 @@ flowchart TD
 - Goal:
 - Scope:
 - Out of Scope:
-- Depends on:
+- Priority: [P0-Critical / P1-High / P2-Medium / P3-Low]
+- Test Cases / Verification Steps:
+  - [ ] Case 1: ...
 - Suggested Owner Agent Type: (e.g., Python / SQL / Frontend / Protobuf / CUDA ...)
 - Deliverables:
   - Files/Artifacts:
@@ -161,7 +164,7 @@ flowchart TD
 - [ ] 依赖关系清晰（至少文本，最好 Mermaid）
 - [ ] 每个任务包含验收点与链接（若有 ID）
 - [ ] 用户已明确回复“确认拆解通过”
-- [ ] 已写入 `docs/spec/{project-name}/tasks.md`
-- [ ] （可选）已写入 `docs/spec/{project-name}/tasks.json`
+- [ ] 已写入 `docs/{mode}/{project-name}/tasks.md`
+- [ ] （可选）已写入 `docs/{mode}/{project-name}/tasks.json`
 
 ```text

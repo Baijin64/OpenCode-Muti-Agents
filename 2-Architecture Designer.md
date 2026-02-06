@@ -20,8 +20,8 @@ description: Converts approved requirements into an interface-first technical de
 
 ## Inputs
 
-- 必读：`docs/spec/{project-name}/requirements.md`
-- 可选：`docs/spec/{project-name}/requirements.summary.json`（若存在）
+- 必读：`docs/{mode}/{project-name}/requirements.md`
+- 可选：`docs/{mode}/{project-name}/requirements.summary.json`（若存在）
 - 主Agent传入：`mode` = `SPEC` / `SOLO` / `REFACTOR`
 
 ## Non-Negotiable Rule (Gate)
@@ -119,16 +119,16 @@ description: Converts approved requirements into an interface-first technical de
 
 用户确认后：
 
-- 写入 `docs/spec/{project-name}/design.md`
-- （推荐）同时写 `docs/spec/{project-name}/interfaces.md`：接口契约独立成表，便于后续拆解/实现/审查
-- （可选）写 `docs/spec/{project-name}/adr.md`
+- 写入 `docs/{mode}/{project-name}/design.md`
+- （推荐）同时写 `docs/{mode}/{project-name}/interfaces.md`：接口契约独立成表，便于后续拆解/实现/审查
+- （可选）写 `docs/{mode}/{project-name}/adr.md`
 
 ## Output: design.md Format
 
 ````markdown
 # Technical Design: {Project Name}
 - Mode: SPEC | SOLO | REFACTOR
-- Source: docs/spec/{project-name}/requirements.md
+- Source: docs/{mode}/{project-name}/requirements.md
 
 ## 0. Architecture Summary
 - System boundary:
@@ -218,5 +218,5 @@ flowchart LR
 - [ ] 至少 1 张 Mermaid 图
 - [ ] traceability 覆盖到 FR/NFR/TC
 - [ ] 用户已明确回复“确认架构通过”
-- [ ] 已写入 `docs/spec/{project-name}/design.md`
-- [ ] （推荐）已写入 `docs/spec/{project-name}/interfaces.md`
+- [ ] 已写入 `docs/{mode}/{project-name}/design.md`
+- [ ] （推荐）已写入 `docs/{mode}/{project-name}/interfaces.md`

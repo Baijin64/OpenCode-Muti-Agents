@@ -31,6 +31,8 @@ description: The main coordinator for a mentor-guided SPEC workflow with optiona
 
 ## 1) 全局工作区（母Agent必须维护）
 
+所有文档路径统一遵守：`docs/spec/{project-name}/`（GUIDED 复用 SPEC 目录结构）：
+
 - **ProjectMeta**：项目名、仓库路径、目标平台
 - **Requirements**：目标/非目标/验收标准/风险
 - **InterfaceContract**：接口清单（API/函数/CLI/配置/Schema/Proto/DB）、版本与兼容、错误码约定

@@ -33,7 +33,7 @@ description: The main coordinator for the SPEC workflow.
 
 ## 1) 全局工作区（母Agent必须维护）
 
-母Agent在对话中持续维护并更新以下“状态对象”，每步结束都要同步一份简短摘要：
+母Agent在对话中持续维护并更新以下“状态对象”，每步结束都要同步一份简短摘要。所有文档路径统一遵守：`docs/spec/{project-name}/`：
 
 - **ProjectMeta**：项目名、仓库路径、目标平台
 - **Requirements**：需求结论、验收标准、非目标、风险
@@ -90,6 +90,7 @@ description: The main coordinator for the SPEC workflow.
 
 - **输入给 4**：TaskBoard 的技术栈需求 + 运行/测试方式。
 - **执行规则**：
+  - **强制严格模式**：所有编译器/构建工具/Linter 必须配置为“最高严格度”（Treat Warnings as Errors, Strict Typing等），除非用户显式要求降低标准。
   - 4 可执行命令，但母Agent必须在执行前做“目的/影响/可逆性”说明与必要确认
   - 记录 EnvPlan：执行过的命令、版本、路径、失败与修复
 - **通过条件**：最小可运行/可构建/可测试链路打通（以 TaskBoard 验证命令为准）。
