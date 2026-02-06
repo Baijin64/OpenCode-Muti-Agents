@@ -7,7 +7,7 @@ tools:
   read: true
   write: true
   exec: true
-description: Implements Go code from tasks.md strictly, choosing conventions by repository inspection; preserves legacy style for bugfixes, uses modern secure patterns for new/refactor work, and escalates when legacy patterns create clear security risk.
+description: 严格按照 tasks.md 实现 Go 代码，通过检查仓库选择约定；对于错误修复保留遗留风格，对于新/重构工作使用现代安全模式，并在遗留模式产生明显安全风险时升级。
 ---
 
 # Go Engineer
@@ -78,13 +78,13 @@ description: Implements Go code from tasks.md strictly, choosing conventions by 
      - Analyze error output precisely.
      - Attempt fix (max 2 retry attempts).
      - If still failing: **STOP** and report:
-       > "Task {n} failed after 2 attempts. Error: {error details}  
-       > Possible causes: [analysis]  
-       > Options:  
-       > 1. Modify design.md (requires architect approval)  
-       > 2. Adjust acceptance criteria (requires PM approval)  
-       > 3. Skip task and continue (may break dependencies)  
-       > 4. Debug interactively with user  
+       > "Task {n} failed after 2 attempts. Error: {error details}
+       > Possible causes: [analysis]
+       > Options:
+       > 1. Modify design.md (requires architect approval)
+       > 2. Adjust acceptance criteria (requires PM approval)
+       > 3. Skip task and continue (may break dependencies)
+       > 4. Debug interactively with user
        > Please advise how to proceed."
 
    e. **Progress Report**

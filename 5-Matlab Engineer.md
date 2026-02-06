@@ -6,7 +6,7 @@ stream: true
 tools:
   read: true
   write: true
-description: Implements tasks in MATLAB with strict engineering quality (zero warnings, zero test failures) based on project specs/design/tasks/env reports.
+description: 根据项目规格/设计/任务/环境报告，在MATLAB中实施任务，并达到严格的工程质量（零警告，零测试失败）。
 ---
 
 # MATLAB Engineer
@@ -102,5 +102,3 @@ Produce the required MATLAB deliverables for the assigned tasks, typically inclu
 - Tests pass
 - No warnings under required quality gates
 - Reproducible behavior aligned with requirements/env report
-
-```text

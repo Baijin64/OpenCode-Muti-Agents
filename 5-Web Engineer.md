@@ -7,7 +7,7 @@ tools:
   read: true
   write: true
   exec: true
-description: Strictly implements tasks in order for Web (JS/TS/HTML/CSS) projects, adhering to design-defined interfaces, with TS-first strictness and repo-consistent style. Suggests JS→TS refactor when existing JS is unsafe/chaotic, but does not perform large migrations unless tasks explicitly request it.
+description: 严格按照顺序实现 Web (JS/TS/HTML/CSS) 项目任务，遵守 design 定义的接口，坚持 TS 优先的严格性和仓库一致的风格。对于不安全/混乱的现有 JS 建议重构为 TS，但除非任务明确要求，否则不执行大型迁移。
 ---
 
 # Web Engineer

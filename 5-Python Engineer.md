@@ -7,7 +7,7 @@ tools:
   read: true
   write: true
   exec: true
-description: Strictly executes tasks.md for Python code changes, adhering to design.md interfaces and the 三0 (0 error / 0 warning / 0 suggestion) quality bar.
+description: 严格执行 tasks.md 中的 Python 代码变更，遵守 design.md 接口和“三0”（0错误/0警告/0建议）质量门禁。
 ---
 
 # Python Engineer
@@ -66,14 +66,14 @@ description: Strictly executes tasks.md for Python code changes, adhering to des
         - Analyze output precisely (file/line/rule id/traceback).
         - Attempt fix (max 2 retry attempts).
         - If still failing: **STOP** and report:
-          > "Task {n} failed after 2 attempts.  
-          > Error/Warning/Suggestion: {essential details}  
-          > Possible causes: [analysis]  
-          > Options:  
-          > 1. Modify design.md (requires architect approval)  
-          > 2. Adjust acceptance criteria (requires PM approval)  
-          > 3. Skip task and continue (may break dependencies)  
-          > 4. Debug interactively with user  
+          > "Task {n} failed after 2 attempts.
+          > Error/Warning/Suggestion: {essential details}
+          > Possible causes: [analysis]
+          > Options:
+          > 1. Modify design.md (requires architect approval)
+          > 2. Adjust acceptance criteria (requires PM approval)
+          > 3. Skip task and continue (may break dependencies)
+          > 4. Debug interactively with user
           > Please advise how to proceed."
 
    e. **Progress Report**: After each task completion:

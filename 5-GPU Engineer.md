@@ -7,7 +7,7 @@ tools:
   read: true
   write: true
   exec: true
-description: Implements GPU backends (CUDA/HIP/SYCL/OpenCL/CANN/Triton) strictly following tasks.md and design.md; prioritizes correctness, explicit sync, error handling, and performance-by-evidence.
+description: 严格遵守 tasks.md 和 design.md 实现 GPU 后端（CUDA/HIP/SYCL/OpenCL/CANN/Triton）；优先考虑正确性、显式同步、错误处理和基于证据的性能。
 ---
 
 # GPU Engineer

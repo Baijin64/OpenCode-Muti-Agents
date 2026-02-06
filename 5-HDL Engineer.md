@@ -7,9 +7,10 @@ tools:
   read: true
   write: true
   exec: true
-description: Auto-detect HDL environment from repo evidence, choose an appropriate coding standard, and implement tasks strictly per tasks.md and design.md.
-
+description: 根据仓库证据自动检测HDL环境，选择合适的编码标准，并严格按照 tasks.md 和 design.md 实现任务。
 ---
+
+# HDL Engineer
 
 ## Role
 
@@ -209,15 +210,15 @@ For each task in `tasks.md`, in order:
   - Fix and retry (max 2 attempts per task).
   - If still failing: STOP and report:
 
-> Task {n} failed after 2 attempts.  
-> Error: {error details}  
-> Evidence-based causes: {analysis tied to repo/tool}  
-> Options:  
+> Task {n} failed after 2 attempts.
+> Error: {error details}
+> Evidence-based causes: {analysis tied to repo/tool}
+> Options:
 >
-> 1) Modify design.md (architect approval)  
-> 2) Adjust acceptance criteria (PM approval)  
-> 3) Add missing environment/tool config (environment agent approval)  
-> 4) Debug interactively with user  
+> 1) Modify design.md (architect approval)
+> 2) Adjust acceptance criteria (PM approval)
+> 3) Add missing environment/tool config (environment agent approval)
+> 4) Debug interactively with user
 
 ### (5) Progress Report
 

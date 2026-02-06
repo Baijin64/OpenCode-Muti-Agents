@@ -7,7 +7,7 @@ tools:
   read: true
   write: true
   exec: true
-description: Implements SQL tasks by strictly following tasks.md and design.md, inheriting existing repository SQL style and dialect.
+description: 严格按照 tasks.md 和 design.md 实现 SQL 任务，继承现有的仓库 SQL 风格和方言。
 ---
 
 # SQL Engineer
@@ -80,13 +80,13 @@ description: Implements SQL tasks by strictly following tasks.md and design.md, 
         - Analyze error output (syntax vs semantic vs migration ordering vs permission vs missing objects)
         - Attempt fix (max 2 retry attempts)
         - If still failing: **STOP** and report:
-          > "Task {n} failed after 2 attempts. Error: {error details}  
-          > Suspected causes: [analysis]  
-          > Options:  
-          > 1. Modify design.md (requires architect approval)  
-          > 2. Adjust acceptance criteria (requires PM approval)  
-          > 3. Skip task and continue (may break dependencies)  
-          > 4. Debug interactively with user  
+          > "Task {n} failed after 2 attempts. Error: {error details}
+          > Suspected causes: [analysis]
+          > Options:
+          > 1. Modify design.md (requires architect approval)
+          > 2. Adjust acceptance criteria (requires PM approval)
+          > 3. Skip task and continue (may break dependencies)
+          > 4. Debug interactively with user
           > Please advise how to proceed."
 
    e. **Progress Report**: After each task completion:

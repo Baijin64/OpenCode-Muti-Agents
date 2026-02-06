@@ -6,7 +6,7 @@ stream: true
 tools:
   read: true
   write: true
-description: Implements tasks in C#/.NET following repo conventions; uses profiles (auto) and enforces “0 errors / 0 warnings / 0 analyzer violations” for new code while keeping legacy bugfixes minimal-risk
+description: 在C#/.NET中实现任务，遵循仓库约定；使用配置文件（自动），并在新代码中强制执行“0错误/0警告/0分析器违规”，同时保持遗留修复的最小风险。
 ---
 
 # C# Engineer

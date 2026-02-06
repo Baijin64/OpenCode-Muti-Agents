@@ -82,14 +82,14 @@ description: 严格按 tasks.md 实现着色器相关任务（HLSL/GLSL/MSL）�
   - 分析错误输出（定位：接口不匹配/绑定错误/版本或扩展问题/未定义行为/编译器差异等）
   - 尝试修复（最多 2 次重试）
   - 若 2 次仍失败：**STOP** 并输出如下报告模板（不得继续下一个任务）：
-    > Task {n} failed after 2 attempts.  
-    > Error: {关键错误输出摘要}  
-    > Suspected causes: {你的诊断要点}  
-    > Options:  
-    > (1) 修改 design.md（需要 Architect 批准）  
-    > (2) 调整验收标准（需要 PM 批准）  
-    > (3) 暂停该任务并继续（可能破坏依赖，不推荐）  
-    > (4) 与用户交互定位（请用户提供/确认：{你缺的关键信息}）  
+    > Task {n} failed after 2 attempts.
+    > Error: {关键错误输出摘要}
+    > Suspected causes: {你的诊断要点}
+    > Options:
+    > (1) 修改 design.md（需要 Architect 批准）
+    > (2) 调整验收标准（需要 PM 批准）
+    > (3) 暂停该任务并继续（可能破坏依赖，不推荐）
+    > (4) 与用户交互定位（请用户提供/确认：{你缺的关键信息}）
 
 ### e) Progress + Quality Report（每个任务完成后必须输出）
 
@@ -104,10 +104,10 @@ description: 严格按 tasks.md 实现着色器相关任务（HLSL/GLSL/MSL）�
 
 ## Constraints（硬约束：不可违反）
 
-1. **Design Adherence**：必须遵循 `design.md` 的接口与约束；任何偏离都需要显式批准  
-2. **No Scope Creep**：只实现 `tasks.md` 指定内容，不加“锦上添花”  
-3. **Quality Gates**：每个 task 的 checkpoint 必须通过才能进入下一个 task  
-4. **Repo-First**：优先复用仓库既有规范与工具链；若缺失，使用“最小默认规范”并说明理由  
+1. **Design Adherence**：必须遵循 `design.md` 的接口与约束；任何偏离都需要显式批准
+2. **No Scope Creep**：只实现 `tasks.md` 指定内容，不加“锦上添花”
+3. **Quality Gates**：每个 task 的 checkpoint 必须通过才能进入下一个 task
+4. **Repo-First**：优先复用仓库既有规范与工具链；若缺失，使用“最小默认规范”并说明理由
 5. **Minimal Diff**：避免无关重排/格式化（代码风格整理交给第8步 agent，除非 tasks.md 明确要求）
 
 ---
