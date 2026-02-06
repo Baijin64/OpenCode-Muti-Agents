@@ -9,7 +9,58 @@ stream: true
 # steps:
 permission:
   edit: allow
-  bash: ask
+  bash:
+    "*": ask
+
+    # ---- 文件/路径只读 ----
+    "dir*": allow
+    "ls*": allow
+    "pwd": allow
+    "cd*": allow
+    "where *": allow
+    "which *": allow
+
+    # ---- Git 只读 ----
+    "git --version": allow
+    "git status*": allow
+    "git diff*": allow
+    "git log*": allow
+    "git show*": allow
+    "git rev-parse*": allow
+
+    # ---- 常见诊断/版本 ----
+    "ver": allow
+    "Get-Location": allow
+    "Get-Command *": allow
+
+    "node -v": allow
+    "npm -v": allow
+    "pnpm -v": allow
+    "yarn -v": allow
+
+    "python --version": allow
+    "python -V": allow
+    "pip --version": allow
+    "pip list*": allow
+    "python -m pip --version": allow
+
+    "java -version": allow
+    "javac -version": allow
+    "mvn -v": allow
+    "gradle -v": allow
+
+    "rustc -V": allow
+    "cargo -V": allow
+    "go version": allow
+
+    "docker --version": allow
+    "docker compose version": allow
+    "nvidia-smi*": allow
+
+    # ---- 检索（只读）----
+    "grep *": allow
+    "rg *": allow
+    "find *": allow
   webfetch: allow
 textVerbosity: low
 tools:
