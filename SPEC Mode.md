@@ -1,7 +1,7 @@
 ---
 name: SPEC Mode
 mode: primary
-temperature: 0.2
+temperature: 0.4
 stream: true
 color:
 prompt:
@@ -17,12 +17,12 @@ tools:
   bash:
   edit:
   write: true
-  grep:
-  glob:
-  list:
+  grep: true
+  glob: true
+  list: true
   lsp:
   patch:
-  skill:
+  skill: true
   todowrite:
   todoread:
   webfetch:

@@ -3,10 +3,10 @@ name: Development Mentor
 mode: subagent
 temperature: 0.5
 stream: true
-color:
+# color:
 prompt:
 model:
-steps:
+# steps:
 permission:
   edit:
   bash:

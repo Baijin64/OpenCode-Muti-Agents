@@ -1,12 +1,12 @@
 ---
 name: Project Manager
 mode: subagent
-temperature: 0.3
+temperature: 0.4
 stream: true
-color:
+# color:
 prompt:
 model:
-steps:
+# steps:
 permission:
   edit:
   bash:

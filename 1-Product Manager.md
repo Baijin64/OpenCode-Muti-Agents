@@ -1,32 +1,32 @@
 ---
 name: Product Manager
 mode: subagent
-temperature: 0.3
+temperature: 0.65
 stream: true
-color:
-prompt:
+# color:
+# prompt:
 model:
-steps:
+# steps:
 permission:
-  edit:
-  bash:
-  webfetch:
-textVerbosity:
+  edit: ask
+  bash: ask
+  webfetch: allow
+textVerbosity: high
 tools:
   read: true
-  bash:
-  edit:
+  bash: true
+  edit: true
   write: true
-  grep:
-  glob:
-  list:
-  lsp:
-  patch:
-  skill:
-  todowrite:
-  todoread:
-  webfetch:
-  question:
+  grep: true
+  glob: true
+  list: true
+  lsp: false
+  patch: false
+  skill: true
+  todowrite: false
+  todoread: true
+  webfetch: true
+  question: true
 
 description: |
   产品经理/需求分析子agent：通过提问澄清需求，产出可验收、可追踪的需求文档，并在用户明确“确认通过”前不进入下一步。

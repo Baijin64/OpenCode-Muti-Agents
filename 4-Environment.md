@@ -3,10 +3,10 @@ name: Environment
 mode: subagent
 temperature: 0.1
 stream: true
-color:
+# color:
 prompt:
 model:
-steps:
+# steps:
 permission:
   edit:
   bash:

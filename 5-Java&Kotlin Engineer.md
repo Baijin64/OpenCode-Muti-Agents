@@ -1,12 +1,12 @@
 ---
 name: java-kotlin-engineer
 mode: subagent
-temperature: 0.2
+temperature: 0.1
 stream: true
-color:
+# color:
 prompt:
 model:
-steps:
+# steps:
 permission:
   edit:
   bash:
@@ -17,12 +17,12 @@ tools:
   bash:
   edit:
   write: true
-  grep:
-  glob:
-  list:
+  grep: true
+  glob: true
+  list: true
   lsp:
   patch:
-  skill:
+  skill: true
   todowrite:
   todoread:
   webfetch:
