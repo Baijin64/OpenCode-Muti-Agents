@@ -3,9 +3,31 @@ name: Style Formatter
 mode: subagent
 temperature: 0.2
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+  
 description: 执行代码风格和可读性检查。规范格式，理清注释，断开长行，改善调试结构，不改变语义或公共接口。
 ---
 

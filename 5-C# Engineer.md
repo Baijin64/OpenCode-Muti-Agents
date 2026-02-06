@@ -3,9 +3,31 @@ name: csharp-engineer
 mode: subagent
 temperature: 0.2
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+  
 description: 在C#/.NET中实现任务，遵循仓库约定；使用配置文件（自动），并在新代码中强制执行“0错误/0警告/0分析器违规”，同时保持遗留修复的最小风险。
 ---
 

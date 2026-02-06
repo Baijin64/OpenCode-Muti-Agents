@@ -3,10 +3,31 @@ name: web_engineer
 mode: subagent
 temperature: 0.0
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
-  exec: true
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+  
 description: 严格按照顺序实现 Web (JS/TS/HTML/CSS) 项目任务，遵守 design 定义的接口，坚持 TS 优先的严格性和仓库一致的风格。对于不安全/混乱的现有 JS 建议重构为 TS，但除非任务明确要求，否则不执行大型迁移。
 ---
 

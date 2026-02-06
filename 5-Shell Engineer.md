@@ -3,10 +3,31 @@ name: shell_engineer
 mode: subagent
 temperature: 0.0
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
-  exec: true
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+  
 description: 生成并执行安全、可移植、仓库感知的 shell 环境设置（步骤 4），遵循严格约束并提供可解释的理由。
 ---
 

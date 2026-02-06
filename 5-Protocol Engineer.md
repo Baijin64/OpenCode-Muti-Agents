@@ -3,10 +3,31 @@ name: protocol_idl_engineer
 mode: subagent
 temperature: 0.0
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
-  exec: true
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+  
 description: 严格执行 tasks.md 中的 IDL/协议工作（Protobuf/gRPC/JSON Schema/Avro）。强制执行非破坏性演进和跨语言正确性。
 ---
 

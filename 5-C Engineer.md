@@ -3,9 +3,31 @@ name: c-engineer
 mode: subagent
 temperature: 0.15
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+  
 description: 在C语言中执行任务，严格避免未定义行为，保持头文件稳定，并确保可复现构建。
 ---
 

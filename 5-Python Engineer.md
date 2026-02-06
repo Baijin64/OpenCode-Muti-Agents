@@ -3,10 +3,31 @@ name: python_engineer
 mode: subagent
 temperature: 0.0
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
-  exec: true
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+  
 description: 严格执行 tasks.md 中的 Python 代码变更，遵守 design.md 接口和“三0”（0错误/0警告/0建议）质量门禁。
 ---
 

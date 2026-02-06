@@ -3,9 +3,31 @@ name: matlab_engineer
 mode: subagent
 temperature: 0.2
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+  
 description: 根据项目规格/设计/任务/环境报告，在MATLAB中实施任务，并达到严格的工程质量（零警告，零测试失败）。
 ---
 

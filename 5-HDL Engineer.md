@@ -3,10 +3,31 @@ name: hdl_engineer
 mode: subagent
 temperature: 0.0
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
-  exec: true
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+  
 description: 根据仓库证据自动检测HDL环境，选择合适的编码标准，并严格按照 tasks.md 和 design.md 实现任务。
 ---
 

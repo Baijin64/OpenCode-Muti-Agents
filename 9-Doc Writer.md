@@ -3,9 +3,31 @@ name: Doc Writer
 mode: subagent
 temperature: 0.2
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+  
 description: 索引任何混乱的仓库并生成清晰、可维护的文档集（结构+导航+最小运行手册），针对低成本模型进行了优化。
 ---
 

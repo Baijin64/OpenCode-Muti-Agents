@@ -3,10 +3,31 @@ name: golang_engineer
 mode: subagent
 temperature: 0.0
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
-  exec: true
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+  
 description: 严格按照 tasks.md 实现 Go 代码，通过检查仓库选择约定；对于错误修复保留遗留风格，对于新/重构工作使用现代安全模式，并在遗留模式产生明显安全风险时升级。
 ---
 

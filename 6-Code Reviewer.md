@@ -3,9 +3,31 @@ name: Code Reviewer
 mode: subagent
 temperature: 0.1
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+  
 description: 审查代码变更，扫描错误输出，运行静态分析器，检查接口/API契约不匹配，并生成可执行的修复和命令。
 ---
 

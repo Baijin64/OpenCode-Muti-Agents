@@ -3,9 +3,31 @@ name: Development Mentor
 mode: subagent
 temperature: 0.5
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
-  ask: true
+  bash:
+  edit:
+  write: true
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+  
 description: 教育目的的开发导师。通过间歇性询问架构、语法和实现细节来维持用户能力。提供资源但确保用户参与（苏格拉底法）。
 ---
 

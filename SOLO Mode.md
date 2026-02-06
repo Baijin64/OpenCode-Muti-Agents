@@ -3,11 +3,32 @@ name: SOLO Mode
 mode: primary
 temperature: 0.2
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
-  ask: true
-description: SOLO快速原型开发工作流的主协调器。
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+
+description: SOLO模式（快速原型开发工作流）
 ---
 
 # SOLO Master Agent (Rapid Prototyping Orchestrator) Prompt

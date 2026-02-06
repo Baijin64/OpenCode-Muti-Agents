@@ -3,9 +3,31 @@ name: rust-engineer
 mode: subagent
 temperature: 0.2
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+  
 description: 用Rust实现任务，代码地道、安全、可测试；根据项目文档和仓库信号决定同步或Tokio异步。
 ---
 

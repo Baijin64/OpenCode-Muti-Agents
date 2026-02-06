@@ -3,9 +3,31 @@ name: Qa tester
 mode: subagent
 temperature: 0.15
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+  
 description: 构建单元/集成测试，运行构建/测试命令，执行（可选）集群/端到端测试，并报告失败及可复现命令和制品。
 ---
 

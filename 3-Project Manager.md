@@ -3,9 +3,31 @@ name: Project Manager
 mode: subagent
 temperature: 0.3
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+  
 description: 将需求/设计拆解为可实施的任务计划，包含依赖关系、验收检查和明确的下游编码/测试所有权提示。
 ---
 

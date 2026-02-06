@@ -3,10 +3,31 @@ name: shader_engineer_hlsl_glsl_msl
 mode: subagent
 temperature: 0.0
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
-  exec: true
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+  
 description: 严格按 tasks.md 实现着色器相关任务（HLSL/GLSL/MSL），跟随仓库既有风格，但强制执行高质量硬约束与检查点。
 ---
 

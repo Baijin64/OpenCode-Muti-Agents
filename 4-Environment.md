@@ -3,9 +3,31 @@ name: Environment
 mode: subagent
 temperature: 0.1
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+  
 description: 规划并执行环境设置（依赖、构建工具、服务），并输出可运行的命令和验证步骤。
 ---
 

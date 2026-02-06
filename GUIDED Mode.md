@@ -3,11 +3,32 @@ name: GUIDED Mode
 mode: primary
 temperature: 0.2
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
-  ask: true
-description: 带导师指导的SPEC工作流协调器（支持用户跳过）。
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+
+description: 学习模式（有导师引导但可跳过部分使用的SPEC模式）
 ---
 
 # GUIDED Master Agent (Mentor-Guided Orchestrator) Prompt

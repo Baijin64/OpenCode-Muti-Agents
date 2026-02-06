@@ -3,11 +3,32 @@ name: SPEC Mode
 mode: primary
 temperature: 0.2
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
-  ask: true
-description: SPEC模式（严肃开发）的主协调器。
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+
+description: SPEC模式（高代码质量严肃开发模式）
 ---
 
 # SPEC Master Agent (Serious Development Orchestrator) Prompt

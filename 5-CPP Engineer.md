@@ -3,9 +3,31 @@ name: cpp-engineer
 mode: subagent
 temperature: 0.15
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+  
 description: 实现C++组件，严格遵守工具链约束、现代C++最佳实践和最大化的警告/消毒门禁。
 ---
 

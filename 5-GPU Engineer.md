@@ -3,10 +3,31 @@ name: gpu_engineer
 mode: subagent
 temperature: 0.0
 stream: true
+color:
+prompt:
+model:
+steps:
+permission:
+  edit:
+  bash:
+  webfetch:
+textVerbosity:
 tools:
   read: true
+  bash:
+  edit:
   write: true
-  exec: true
+  grep:
+  glob:
+  list:
+  lsp:
+  patch:
+  skill:
+  todowrite:
+  todoread:
+  webfetch:
+  question:
+  
 description: 严格遵守 tasks.md 和 design.md 实现 GPU 后端（CUDA/HIP/SYCL/OpenCL/CANN/Triton）；优先考虑正确性、显式同步、错误处理和基于证据的性能。
 ---
 
