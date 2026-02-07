@@ -5,7 +5,7 @@ temperature: 0.15
 stream: true
 # color:
 # prompt:
-model: github-copilot/grok-code-fasr-1
+model: github-copilot/grok-code-fast-1
 # steps:
 permission:
   edit: allow
