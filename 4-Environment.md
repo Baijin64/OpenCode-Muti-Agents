@@ -5,7 +5,7 @@ temperature: 0.1
 stream: true
 # color:
 # prompt:
-model: opencode/minimax-m-2.1-free
+model: opencode/minimax-m2.1-free
 # steps:
 permission:
   edit: allow
