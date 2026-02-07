@@ -5,7 +5,7 @@ temperature: 0.4
 stream: true
 # color:
 # prompt:
-# model:
+model: google/antigravity-gemini-3-pro
 # steps:
 permission:
   edit: allow

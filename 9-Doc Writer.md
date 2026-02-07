@@ -5,7 +5,7 @@ temperature: 0.3
 stream: true
 # color:
 # prompt:
-# model:
+model: google/antigravity-gemini-3-flash
 # steps:
 permission:
   edit: allow

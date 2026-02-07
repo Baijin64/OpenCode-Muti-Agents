@@ -4,7 +4,7 @@ mode: primary
 temperature: 0.4
 stream: true
 # prompt:
-# model:
+model: opencode/kimi-k2.5
 # steps:
 permission:
   edit: ask

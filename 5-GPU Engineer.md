@@ -5,7 +5,7 @@ temperature: 0.1
 stream: true
 # color:
 # prompt:
-# model:
+model: github-copilot/gpt-5.2-codex
 # steps:
 permission:
   edit: allow

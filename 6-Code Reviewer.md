@@ -5,7 +5,7 @@ temperature: 0.1
 stream: true
 # color:
 # prompt:
-# model:
+model: github-copilot/claude-opus-4.6
 # steps:
 permission:
   edit: ask
