@@ -11,7 +11,7 @@ permission:
   edit: allow
   bash: ask
   webfetch: deny
-textVerbosity: low
+textVerbosity: medium
 tools:
   read: true
   bash: true
