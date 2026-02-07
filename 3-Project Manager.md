@@ -5,7 +5,7 @@ temperature: 0.4
 stream: true
 # color:
 # prompt:
-model: opencode/kimi-k2.5
+model: opencode/kimi-k2.5-free
 # steps:
 permission:
   edit: allow

@@ -5,7 +5,7 @@ temperature: 0.5
 stream: true
 # color:
 # prompt:
-model: opencode/glm-4.7
+model: opencode/glm-4.7-free
 # steps:
 permission:
   edit: deny
