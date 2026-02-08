@@ -41,6 +41,11 @@ npm i -g opencode-ai
 
 在使用前，需要在每个Agent的 `.md` 文件中切换第8行的模型提供商设置。根据您的需求选择合适的AI模型提供商，模板默认使用Google Antigravity，Gihub Copilot和自带的OpenCode Zen Free。使用Antigravity模型: [https://github.com/NoeFabris/opencode-antigravity-auth](https://github.com/NoeFabris/opencode-antigravity-auth)
 
+**订阅说明：**
+- ChatGPT Plus：可以直接使用Plus和Pro账号订阅
+- GitHub Copilot：也可以直接使用Pro和Pro＋订阅
+- Claude：订阅只允许使用Max版
+
 ### IDE集成
 
 安装命令行工具后，您可以在以下IDE中集成OpenCode：
